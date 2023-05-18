@@ -147,7 +147,7 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background: rgb(100, 237, 150);
+  background: whitesmoke;
   z-index: -1;
   transition: .5s;
 }
@@ -219,6 +219,90 @@ body {
 .education-column {
   flex: 1;
   padding: 0 10px;
+}
+#skills {
+  margin: 50px;
+}
+
+#skills h2 {
+  text-align: center;
+}
+
+#skillsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skillsList li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  color: #f7f4f0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 220px;
+}
+
+.skill-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.skill-title .img {
+  margin-right: 10px;
+}
+
+.skill-title img {
+  width: 24px;
+  height: 24px;
+}
+
+.skill-title h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.skill-box p {
+  color: #666;
+  font-size: 14px;
 }
 
 

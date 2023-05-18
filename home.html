@@ -13,27 +13,25 @@
     <a href="#" class="logo">New John Refuse</a>
 
     <nav class="main-nav">
-      <a href="#" class="active">Home</a>
-      <a href="#">About Me</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Newsletter</a>
-      <a href="#">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="home">
     <div class="home-content">
-      <h1>Bonjour_</h1>
+      <h1>Bonjour</h1>
       <h3>I'm a <span class="multiText">  </span></h3>
 
       <p>Software Engineer Student at Western Governors University. 3 years experience as a DevOps Engineer. Experience in solving the typical problems and deployment operations required in different environments and supporting development. Proficient in research and development, as well as skilled in Strong written and verbal communication skills, particularly in technical presentations and representing at industry or domain events. Fluent in both English and French</p>
 
       <div class="btn-box">
-        <a href="#">Hire me</a>
-        <a href="#">Let's Talk</a>
+        <a href="#portfolio">Hire me</a>
+        <a href="#contact">Let's Talk</a>
       </div>
     </div>   
-    <div class="home-img"> 
+    <div class="home-img" id="home"> 
       <img src="IMG_1410.PNG" alt="" width="400">
     </div>    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -96,7 +94,7 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="container" id="about">
     <h1>My Journey!</h1>
 
     <h2>Education</h2>
@@ -111,7 +109,7 @@
 
     <div class="education">
       <h3>Cloud Engineering Diploma</h3>
-      <p>High School Diploma</p>
+      <p>Engineering Diploma</p>
       <p>Year: 2022-2023</p>
       <div class="education-details">
         <p>Additional details about my Cloud Engineering education...</p>
@@ -174,4 +172,37 @@
 
 
     <!-- Contact Me Section-->
-    
+     <!-- Contact Me Section-->
+     <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <form action="#" method="POST" class="form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="form-group text-center">
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
